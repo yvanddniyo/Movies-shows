@@ -6,9 +6,16 @@
 }
 
 .banner__contents {
-    margin-left: 30px;
+    text-align: center;
+    margin-left:  30px;
     padding-top: 140px;
     height: 190px;
+}
+
+.banner__descriptions__container{
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
 }
 
 .banner__title{

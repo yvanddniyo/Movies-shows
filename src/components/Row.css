@@ -3,6 +3,10 @@
     margin-left: 20px;
 }
 
+.row h2 {
+    text-align: center;
+}
+
 .row__posters {
     display: flex;
     overflow-y: hidden; 

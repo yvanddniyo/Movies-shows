@@ -19,13 +19,12 @@ const NavBar = () => {
   return ( 
     <div className={`nav ${show && "nav__black"}`}>
         <div className="nav__content">
-          <img
+          <h1
           className='nav__logo'
-          src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="logo"
-          />
+          ><span>Y</span><span>.M</span>ovies</h1>
           <img
           className='nav__avatar'
-          src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="avatar" />
+          src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_640.png" alt="avatar" />
         </div>
     </div>
   )
