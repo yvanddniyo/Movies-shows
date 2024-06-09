@@ -14,6 +14,7 @@ const Row = ({title, fetchUrl, isLargeRow = false}) => {
         }
         fetchData()
      },[fetchUrl])
+     console.log(movies)
   return (
     <div className='row '>
     <h2>{title}</h2>
@@ -22,13 +23,20 @@ const Row = ({title, fetchUrl, isLargeRow = false}) => {
             movies.map((movie, index) => 
                 ((isLargeRow && movie.poster_path) ||
                 (!isLargeRow && movie.backdrop_path)) && (
-                    <img
-                    className={`row__poster ${isLargeRow && "row__posterLarge"}`}
-                    key={index}
-                    src={`${Base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path}`} alt={movie.name}/>
+                    <div className="">
+                        <img
+                        className={`row__poster ${isLargeRow && "row__posterLarge"}`}
+                        key={index}
+                        src={`${Base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path}`} alt={movie.name}/>
+                        <div className="row__details">
+                        <h2 className='row__name'>{movie.name}</h2>
+                        <h3 className='row__rate'>Rate: {movie.vote_average}</h3>
+                        </div>
+                    </div>
                 )
             )
         }
+        
     </div>
     </div>
   )
