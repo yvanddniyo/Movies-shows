@@ -1,6 +1,6 @@
 const  mongoose = require("mongoose")
 const { clients } = require("../sampleData")
-const Clients = require("./Clients")
+const Clients = require("./Client")
 
 const ProjectSchema = new mongoose.Schema({
     name: {
