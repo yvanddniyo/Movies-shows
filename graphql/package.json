@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "servers.js",
   "scripts": {
-    "dev": "node --watch servers.js"
+    "dev": "node init && node --watch servers.js"
   },
   "author": "",
   "license": "ISC",
