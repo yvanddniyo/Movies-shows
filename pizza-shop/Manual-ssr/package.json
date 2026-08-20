@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node --watch start.js"
+    "dev": "node init && node --watch start.js"
   },
   "author": "",
   "license": "ISC",
